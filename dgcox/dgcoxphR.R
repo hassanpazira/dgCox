@@ -101,7 +101,7 @@ dgcoxphR <- function(time, status, X, g0 = NULL, maxrsq_ratio = 0.9, np = 500, n
 			eta <- drop(Xsa %*% ba[A])
 			exp_eta <- exp(eta)
 			wgh <- cumsum(exp_eta)
-            if(sum(dba^2) <= eps) break
+			if(sum(dba^2) <= eps) break
 		}
 		if(i == nstep | class(dba) == "try-error" | is.nan(sum(dba^2))){
 			warning("NR does not converge at gamma = ", ag, "last values are reported")
