@@ -142,8 +142,8 @@ dgcoxphR <- function(time, status, X, g0 = NULL, maxrsq_ratio = 0.9, np = 500, n
 		dev_ratio[k] <- 1 - logplik[k]/logplik[1]
 		rsq[k] <- 1 - exp(-dev[k] / nx)
 		if(verbose)
-            cat("nav =", nav, "np =", k, "dev_ratio =", round(dev_ratio[k], 3),
-            "R2 =", round(rsq[k], 3), "max R2 =", round(maxrsq, 3), "completed\n\n")
+			cat("nav =", nav, "np =", k, "dev_ratio =", round(dev_ratio[k], 3), "R2 =", round(rsq[k], 3), 
+			    "max R2 =", round(maxrsq, 3), "completed\n\n")
 		if(rsq[k] / maxrsq > maxrsq_ratio) {
 			k <- k + 1
 			break
