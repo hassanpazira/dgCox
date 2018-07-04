@@ -17,7 +17,7 @@ library(glmnet)
 library(glmpath)
 library(penalized)
 source("dgcoxphR.R")
-source("ROC.R)
+source("ROC.R")
 
 ########################
 # general setting
@@ -47,7 +47,7 @@ for(k in 1:nsim){
     
     X <- mvrnorm(n, mu, R)
     ## generate the survival times using the exponential distribution
-    lambdas <- exp(srop(X[, 1:s] %*% b[1:s]))
+    lambdas <- exp(drop(X[, 1:s] %*% b[1:s]))
     tm <- rexp(n, lambdas)
     ## generate the censorship, uniformly across the data
     status <- rbinom(n, 1, 1-pi)
@@ -79,7 +79,7 @@ for(k in 1:nsim){
     ##
     ROC.coxnet <- ROC(b, b.coxnet)
     ROC.dgCox <- ROC(b, b.dgCox)
-    ROC.coxpath <- ROC(n, b.coxpath)
+    ROC.coxpath <- ROC(b, b.coxpath)
     ROC.penal <- ROC(b, b.penal)
     
     ## computing TRUE and FALSE POSITIVE RATE
