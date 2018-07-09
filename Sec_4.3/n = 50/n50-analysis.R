@@ -95,7 +95,7 @@ for(h in 1:length(p)){
 		analysis[h, k, "GIC_aic", "TP", "se"] <- se(results[1:i, h, k, "GIC_aic", "TP"])
 		analysis[h, k, "GIC_aic", "FP", "mean"] <- mean(results[1:i, h, k, "GIC_aic", "FP"], na.rm = TRUE)
 		analysis[h, k, "GIC_aic", "FP", "se"] <- se(results[1:i, h, k, "GIC_aic", "FP"])
-        analysis[h, k, "GIC_aic", "TN", "mean"] <- mean(results[1:i, h, k, "GIC_aic", "TN"], na.rm = TRUE)
+        	analysis[h, k, "GIC_aic", "TN", "mean"] <- mean(results[1:i, h, k, "GIC_aic", "TN"], na.rm = TRUE)
 		analysis[h, k, "GIC_aic", "TN", "se"] <- se(results[1:i, h, k, "GIC_aic", "TN"])
 		analysis[h, k, "GIC_aic", "FN", "mean"] <- mean(results[1:i, h, k, "GIC_aic", "FN"], na.rm = TRUE)
 		analysis[h, k, "GIC_aic", "FN", "se"] <- se(results[1:i, h, k, "GIC_aic", "FN"])
