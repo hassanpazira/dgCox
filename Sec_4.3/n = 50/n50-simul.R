@@ -111,7 +111,7 @@ for(h in 1:length(p)){
 				
 				######################################
 				# Fan_13 section
-                k.gof <- log(log(nd)) * log(p[h])
+                		k.gof <- log(log(nd)) * log(p[h])
 				Fan_13 <- gof(out.dgcoxph, k = k.gof, complexity = "df")
 				id <- which.min(Fan_13)
 				results[i, h, k, "Fan_13", "value"] <- Fan_13[id]
