@@ -14,4 +14,5 @@ Javier Gonzalez - Amazon Research Cambridge (Cambridge) e.mail: javi6681@gmail.c
 
 Fentaw Abegaz - University of Groningen (Netherlands) e.mail: fentawabegaz@gmail.com
 
-Journal: Submitted to Biostatistics
+Journal: Biostatistics
+https://academic.oup.com/biostatistics/advance-article/doi/10.1093/biostatistics/kxy060/5149694
